@@ -5,9 +5,6 @@ import getHelperForMethod from './getHelperForMethod';
 import bridge from '@vkontakte/vk-bridge';
 import UrlParser from "./UrlParser";
 
-import vkDirectGameApp from './vkDirectGameApp';
-window.vkDirectGameApp = new vkDirectGameApp();
-window.vkDirectGameApp.init();
 
 function VKWebAppInit()
 {
