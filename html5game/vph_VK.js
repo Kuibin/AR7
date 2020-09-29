@@ -1,4 +1,18 @@
+import methods from './methods';
+import notify from './notify';
+import renderMethods from './renderMethods';
+import getHelperForMethod from './getHelperForMethod';
+import bridge from '@vkontakte/vk-bridge';
+import UrlParser from "./UrlParser";
 
+import vkDirectGameApp from './vkDirectGameApp';
+window.vkDirectGameApp = new vkDirectGameApp();
+window.vkDirectGameApp.init();
+
+function VKWebAppInit()
+{
+	bridge.send("VKWebAppInit", {});
+}
 function VKWebAppShare(URL)
 {
 	bridge.send("VKWebAppShare", {"link": URL});
