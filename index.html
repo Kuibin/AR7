@@ -71,6 +71,13 @@
     </head>
 
     <body>
+        <script src="https://unpkg.com/@vkontakte/vk-bridge/dist/browser.min.js"></script>
+        
+        <script>
+        // Sends event to client
+        vkBridge.send('VKWebAppInit');
+        </script> 
+        
         <div class="gm4html5_div_class" id="gm4html5_div_id">
             <!-- Create the canvas element the game draws to -->
             <canvas id="canvas" width="800" height="484">
@@ -79,7 +86,7 @@
         </div>
 
         <!-- Run the game code -->
-        <script type="text/javascript" src="html5game/Academia del Romance.js?ULHYB=1211642870"></script>
+        <script type="text/javascript" src="html5game/Academia del Romance.js?TALZB=907897408"></script>
         <script>window.onload = GameMaker_Init;</script>
     </body>
 </html>
